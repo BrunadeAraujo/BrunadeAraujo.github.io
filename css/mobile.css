@@ -16,7 +16,7 @@
   }
 
   .profile__text {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .section__tittle {
@@ -69,4 +69,6 @@
   .social-container {
     flex-direction: column;
   }
+
 }
+  

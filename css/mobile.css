@@ -4,38 +4,34 @@
   }
 
   header {
-    max-width: 400px;
     width: 100%;
+    max-width: 90%; /* Usa porcentagem ao invés de um valor fixo */
+    margin: 0 auto; /* Centraliza */
   }
 
   .home {
-    position: relative;
     flex-direction: column !important;
     width: 100%;
-    min-height: 100vh; /* 100% da altura da tela */
+    min-height: 100vh;
   }
 
   .profile__text {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    text-align: center; /* Centraliza o texto */
   }
 
-  .section__tittle {
-    font-size: 2.5rem;
-  }
-
-  .description__tittle {
-    font-size: 3.5rem;
-  }
-
+  .section__tittle,
+  .description__tittle,
   .skills__tittle {
-    font-size: 3.5rem;
+    font-size: 2rem; /* Reduz tamanho em telas menores */
+    text-align: center;
   }
 
   .sobre-mim {
     height: auto;
-    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
     align-items: center;
-    gap: 124px;
+    gap: 5vw; /* Usa uma medida relativa */
   }
 
   .skills__container {
@@ -45,16 +41,19 @@
   .projetos {
     height: auto;
     display: flex;
+    flex-direction: column; /* Empilha os projetos no mobile */
+    align-items: center;
   }
 
-  .card-container{
+  .card-container {
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap; /* Permite melhor ajuste */
   }
 
   .card-container img {
-    width: 350px;
+    width: 90%;
+    max-width: 350px;
   }
 
   h2 {
@@ -63,12 +62,17 @@
   }
 
   .contatos {
-    height: 900px;
+    min-height: 100vh; /* Altura mínima da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .social-container {
     flex-direction: column;
+    align-items: center;
   }
-
 }
+
   

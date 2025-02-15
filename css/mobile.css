@@ -74,8 +74,8 @@
     align-items: center;
   }
   .profile__name {
-    font-size: 3rem;
-
+    font-size: 2rem;
+    color: #fff;
     
   }
 }
